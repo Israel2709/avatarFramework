@@ -1,3 +1,39 @@
+*{
+	font-family:arial, helvetica, sans-serif;
+}
+
+/*Font Face*/
+
+@font-face {
+    font-family: 'interstate_extralight';
+    src: url('../fonts/interstate_extralight/interstate_extralight-webfont.woff2') format('woff2'),
+         url('../fonts/interstate_extralight/interstate_extralight-webfont.woff') format('woff'),
+         url('../fonts/interstate_extralight/interstate_extralight-webfont.ttf') format('truetype'),
+         url('../fonts/interstate_extralight/interstate_extralight-webfont.svg#interstateregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'interstate_light';
+    src: url('../fonts/interstate_light/interstate_light-webfont.woff2') format('woff2'),
+         url('../fonts/interstate_light/interstate_light-webfont.woff') format('woff'),
+         url('../fonts/interstate_light/interstate_light-webfont.ttf') format('truetype'),
+         url('../fonts/interstate_light/interstate_light-webfont.svg#interstateregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'interstate_regular';
+    src: url('../fonts/interstate_regular/interstate_regular-webfont.woff2') format('woff2'),
+         url('../fonts/interstate_regular/interstate_regular-webfont.woff') format('woff'),
+         url('../fonts/interstate_regular/interstate_regular-webfont.ttf') format('truetype'),
+         url('../fonts/interstate_regular/interstate_regular-webfont.svg#interstateregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*Grid System*/
 .r9-main-container{
 	width: 100%;
@@ -33,7 +69,6 @@
 .r9-column{
 	float: left;
 	padding: 0 10px 0 10px;
-	text-align: center;
 }
 
 .r9-column.colspan-1{
@@ -66,6 +101,18 @@
 	font-family: Arial, helvetica, sans-serif
 }
 
+.interstate{
+	font-family:"interstate_regular";
+}
+
+.interstate.light{
+	font-family:"interstate_light";
+}
+
+.interstate.xlight{
+	font-family:"interstate_extralight";
+}
+
 .arial.black, .interstate.black{
 	color:#333;
 }
@@ -82,6 +129,145 @@
 	color:#d60000;
 }
 
+.arial.bold, .interstate.bold{
+	font-weight: bold;
+}
+
+.arial.italic, .interstate.italic{
+	font-style:italic;
+}
+
+.page-title{
+	font-family: "interstate_light";
+	font-size: 26px;
+	color:#333;
+}
+
+.headline-1{
+	font-family: "interstate_extralight";
+	font-size: 32px;
+	color:#333;
+}
+
+.headline-2{
+	font-family: "interstate_light";
+	font-size: 22px;
+	color:#333;
+	margin-bottom: 30px;
+}
+
+.headline-3{
+	font-family: "interstate_light";
+	font-size: 18px;
+	color:#333;
+}
+
+.body-copy{
+	font-size: 14px;
+	color:#333;
+	margin-bottom:18px; 
+}
+
+label{
+	font-size: 14px;
+	color:#333;
+}
+
+.placeholder{
+	font-style: italic;
+	font-size:14px;
+	color:#666666;
+}
+
+.tbl-content{
+	font-size: 12px;
+	color:#333
+}
+
+.error-msg{
+	font-size: 14px;
+	color:#D60000;
+}
+
+.plain-link-bold{
+	font-size: 14px;
+	font-weight: bold;
+	color:#0076c0;
+	cursor: pointer;
+}
+
+.help-tooltip{
+	padding: 1px 5px;
+    cursor: pointer;
+    border: 1px solid #333;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.bottom-divider{
+	height: 12px;
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 18px;
+}
+
+.btn{
+	box-sizing:border-box;
+	padding:10px !important;
+	text-align: center;
+	float: left;
+}
+
+.btn.colspan-2{
+	width: 150px;
+}
+
+.btn-primary{
+	background: #0076c0;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.secondary-link{
+	font-size: 14px;
+	font-weight: bold;
+	color:#0076c0;
+	margin-left: 10px;
+}
+
+.secondary-link .arrow-right {
+	width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #0076c0;
+    float: left;
+    margin-top: 4px;
+}
+
+.bulleted-list .headline-3{
+	margin-bottom: 18px;
+}
+
+.bulleted-list ul{
+	font-size: 14px;
+	color:#333;
+	padding-left: 15px;
+	padding-right: 0px;
+}
+
+.bulleted-list li{
+	margin-top: 0px;
+	margin-bottom: 18px;
+}
+
+
+
+
+
+
 
 
 
@@ -90,12 +276,20 @@
 	box-shadow:0px 0px 0px 1px #c5c5c5 inset;
 }
 
-.typography p{
+p{
 	font-size: 20px;
-	font-weight: bold;
 }
 
 section{
+	float: left;
+	border-radius: 10px;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.pull-left{
 	float: left;
 }
 
