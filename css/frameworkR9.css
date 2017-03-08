@@ -51,7 +51,10 @@
 }
 
 .r9-row{
-	width: 100%
+	width: 100%;
+	display: block;
+	float: left;
+
 }
 
 .r9-row .r9-column:first-of-type{
@@ -62,11 +65,7 @@
 	padding-right: 0 !important
 }
 
-.r9-row{
-	margin-top: 10px;
-	display: block;
-	float: left;
-}
+
 
 .r9-column{
 	float: left;
@@ -149,6 +148,8 @@
 	font-family: "interstate_extralight";
 	font-size: 32px;
 	color:#333;
+	margin:0px;
+	margin-bottom: 30px;
 }
 
 .headline-2{
@@ -166,8 +167,8 @@
 
 .body-copy{
 	font-size: 14px;
-	color:#333;
-	margin-bottom:18px; 
+	color:#333; 
+	margin-bottom: 0px;
 }
 
 label{
@@ -229,10 +230,14 @@ label{
 }
 
 .bottom-divider{
-	height: 12px;
+	height: 30px;
 	width: 100%;
 	border-bottom: 1px solid #ddd;
 	margin-bottom: 18px;
+}
+
+.btn-wrapper{
+	width: 100%
 }
 
 .btn-wrapper .btn:first-of-type{
@@ -450,7 +455,20 @@ label{
     cursor: pointer
 }
 
+.all-req{
+	font-size: 14px;
+	color:#333;
+	font-style: italic;
+	margin:0px;
+	margin-bottom: 42px;
+}
+
 /*Forms*/
+
+.form-wrapper{
+	width: 100%;
+	margin-top:42px;
+}
 
 .form-group{
 	width:100%;
@@ -476,7 +494,8 @@ label{
     border: 1px solid #CCC;
     border-right: none;
     background: url(../img/dd-chevron.png) no-repeat;
-    background-position: center right
+    background-position: center right;
+    margin-top:12px;
 }
 
 .input-group{
@@ -495,9 +514,22 @@ label{
 	float: left;
 }
 
+.input-group input[type="text"]{
+	margin-top:12px;
+    height: 42px;
+    box-sizing: border-box;
+    border: 1px solid #CCC;
+    width: 100%;
+    padding-left: 10px;
+}
+
 .input-group input[type="radio"]{
 	margin:0px;
 	margin-right: 20px;
+}
+
+.input-group:last-of-type{
+	margin-bottom: 0px;
 }
 
 .labeled-input{
@@ -532,6 +564,7 @@ label{
     border: 1px solid #CCC;
     width: 100%;
     padding-left: 60px;
+    margin-top:0px !important;
 }
 
 
@@ -566,5 +599,12 @@ section{
 
 .pull-left{
 	float: left;
+}
+
+section.page-sample{
+	    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 0;
+    padding-bottom: 20px
 }
 
