@@ -39,9 +39,7 @@
 /*Grid System*/
 .r9-main-container{
 	width: 100%;
-    max-width: 984px;
-    padding-right: 22px;
-    padding-left: 22px;
+    max-width: 692px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -65,35 +63,43 @@
 	padding-right: 0 !important
 }
 
-
-
 .r9-column{
 	float: left;
 	padding: 0 10px 0 10px;
+	box-sizing:border-box;
 }
 
 .r9-column.colspan-1{
-	width:60px;
+	width:11.1111%;
 }
 
 .r9-column.colspan-2{
-	width: 140px;
+	width: 22.2222%;
 }
 
 .r9-column.colspan-3{
-	width: 220px;
+	width: 33.3333%;
 }
 
 .r9-column.colspan-4{
-	width: 300px;
+	width: 44.4444%;
+}
+
+.r9-column.colspan-5{
+	width: 55.5555%
 }
 
 .r9-column.colspan-6{
-	width: 460px;
+	width: 66.6666%
 }
-
-.r9-column.colspan-12{
-	width: 100%;
+.r9-column.colspan-7{
+	width: 77.7777%
+}
+.r9-column.colspan-8{
+	width: 88.8888%
+}
+.r9-column.colspan-9{
+	width: 100%
 }
 /*---grid system---*/
 
