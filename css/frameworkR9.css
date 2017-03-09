@@ -538,7 +538,7 @@ label{
 	margin-bottom: 0px;
 }
 
-.labeled-input{
+.labeled-input, .datepicker-input{
 	position: relative;
 	width: 100%;
 	float: left;
@@ -546,7 +546,7 @@ label{
 	margin-top: 12px;
 }
 
-.labeled-input span{
+.labeled-input span, .datepicker-input span{
 	display: block;
 	width: auto;
 	min-width: 42px;
@@ -559,12 +559,26 @@ label{
 	padding-top: 12px;
 	padding:12px 10px 0 10px;
 	white-space: nowrap;
+}
+
+.datepicker-input span{
+	background-color: #eee;
+	background: url(../img/dp-calendar.png)no-repeat center #eee;
+}
+
+.labeled-input.left-label span, .datepicker-input.left-label span{
 	position: absolute;
 	left: 0;
 	top:0;
 }
 
-.labeled-input input{
+.labeled-input.right-label span, .datepicker-input.right-label span{
+	position: absolute;
+	right: 0;
+	top:0;
+}
+
+.labeled-input input, .datepicker-input input{
 	height: 42px;
     box-sizing: border-box;
     border: 1px solid #CCC;
@@ -573,6 +587,17 @@ label{
     margin-top:0px !important;
 }
 
+.labeled-input.left-label input, .datepicker-input.left-label input{
+	padding-left: 60px;
+}
+
+.labeled-input.right-label input, .datepicker-input.right-label input{
+	padding-left: 10px;
+}
+
+.datepicker-input.left-label input{
+	padding-left: 50px;
+}
 
 
 
