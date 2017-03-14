@@ -601,6 +601,129 @@ label{
 
 
 
+/*Navigation*/
+
+#header .utilities_nav {
+    background-color: #333 !important;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    padding: 0 22px;
+    height: 35px !important;
+    max-width: 940px;
+}
+
+#header .utilities_nav #nav_home {
+    float: right;
+}
+
+#header .utilities_nav #nav_home > li {
+    float: left;
+    position: relative;
+    margin-top: 9px;
+    margin-left: 25px;
+}
+
+#header .utilities_nav #nav_home > li > a {
+    float: left;
+    height: 100%;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+#imagenBCitibank {
+    background: url(../images/layout/imageHeaderCiti2.png);
+    height: 90px;
+}
+
+#citibank-logo {
+    background: url(../images/layout/logo_banamex.png) no-repeat scroll 0 0 transparent;
+    height: 35px;
+    margin-left: 22px;
+    margin-top: 26px;
+    float: left;
+    width: 220px;
+}
+
+.citibank-containerImg {
+    height: 90px;
+    display: block;
+}
+
+.citibank-containerImg {
+    height: 90px;
+    display: block;
+}
+
+.citibank-containerImg .logo-text{
+	float: left;
+    font-size: 28px;
+    color: white;
+    margin-top: 18px;
+    border-left: 1px solid white;
+    padding-left: 15px;
+    height: 43px;
+    padding-top: 12px;
+}
+
+.breadcrumb-wrapper{
+	position: relative;
+	width: 100%;
+	margin-bottom: 48px;
+	float: left;
+}
+
+.step-wrapper{
+	width: 33.33333%;
+	float: left;
+	z-index: 9999;
+	position: relative
+}
+
+.step-wrapper p{
+	font-size: 13px;
+	color:#666;
+}
+
+.step-wrapper.active p{
+	font-weight: bold;
+}
+
+.step-wrapper .step-mark{
+	width: 5px;
+	height: 5px;
+	border-radius: 10px;
+	border: 1px solid #666;
+	z-index: 9999;
+	background: white;
+}
+
+.step-wrapper.active .step-mark{
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	border: 1px solid #666;
+	margin-top: -5px;
+}
+
+.step-wrapper.active .step-mark:after{
+	content: "\25CF";
+    color: #333;
+    margin-top: -3px;
+    float: left;
+    margin-left: 2px;
+}
+
+.breadcrumb-wrapper .breadcrumb-line{
+	width: 68%;
+    position: absolute;
+    top: 45px;
+    z-index: 1;
+    border-top: 1px solid #666;
+}
+
+
+
 
 
 
