@@ -681,8 +681,10 @@ label{
 }
 
 .step-wrapper p{
-	font-size: 13px;
+	font-size: 13px !important;
 	color:#666;
+	margin-top:13px !important;
+	margin-bottom: 13px !important;
 }
 
 .step-wrapper.active p{
