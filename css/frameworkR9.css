@@ -711,15 +711,14 @@ label{
 .step-wrapper.active .step-mark:after{
 	content: "\25CF";
     color: #333;
-    margin-top: -3px;
     float: left;
-    margin-left: 2px;
+    margin-left: 4px;
 }
 
 .breadcrumb-wrapper .breadcrumb-line{
-	width: 68%;
+	width: 67%;
     position: absolute;
-    top: 45px;
+    top: 44px;
     z-index: 1;
     border-top: 1px solid #666;
 }
